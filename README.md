@@ -2,6 +2,18 @@
 
 A simple, single-user medicine tracker. Data lives in a real Google Sheet (one tab per month), so you can open it like Excel any time. Deployed on Vercel.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[Dailymedicinetracker]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ## One-time setup
 
 1. In [Google Cloud Console](https://console.cloud.google.com/), create a project, then enable the **Google Sheets API** and **Google Drive API**.
