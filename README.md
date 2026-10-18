@@ -6,11 +6,13 @@ A simple, single-user medicine tracker. Data lives in a real Google Sheet (one t
 
 ```mermaid
 flowchart LR
-    A[User] --> B[Dailymedicinetracker]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+    Browser --> Next[Next.js app router]
+    Next --> Pages[Pages & layouts]
+    Next --> Components[React components]
+    Next --> API[API routes]
+    API --> DB[(Database)]
+    API --> Auth[Auth provider]
+    Components --> Pages
 ```
 
 
