@@ -9,7 +9,6 @@
 /build
 
 # env files (all local envs, never commit secrets)
-.env*
 !.env.example
 
 # misc
@@ -24,3 +23,4 @@ next-env.d.ts
 # service account keys — never commit these
 *.json.key
 service-account*.json
+config.bat
