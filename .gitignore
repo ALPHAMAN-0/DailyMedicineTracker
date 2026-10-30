@@ -23,4 +23,3 @@ next-env.d.ts
 # service account keys — never commit these
 *.json.key
 service-account*.json
-config.bat
