@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && next dev",
-    "build": "node init && next build",
-    "start": "node init && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint ."
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "googleapis": "^180.0.0",
     "next": "^16.3.5",
     "node-fetch": "^3.3.2",
